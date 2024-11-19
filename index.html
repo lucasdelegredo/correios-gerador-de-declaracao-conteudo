@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Destinatário e Identificação dos Bens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.5;
+            font-size: 12px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        .label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            /* Para incluir padding na largura total */
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #d3d3d3;
+            /* Tom cinza para os cabeçalhos da tabela */
+        }
+    </style>
+</head>
+
+<body>
+    <script src="script.js"> </script>
+
+    <h1>Formulário de Destinatário e Identificação dos Bens</h1>
+
+    <div class="form-section">
+        <h2>Informações do Destinatário</h2>
+        <label class="label">NOME:</label>
+        <input type="text" name="nome_destinatario" id="nome_dest" placeholder="Nome do Destinatário">
+
+        <label class="label">ENDEREÇO:</label>
+        <input type="text" name="endereco_destinatario" id="end_dest" placeholder="Endereço do Destinatário">
+
+        <label class="label">CIDADE:</label>
+        <input type="text" name="cidade_destinatario" id="cid_dest" placeholder="Cidade do Destinatário">
+
+        <label class="label">UF:</label>
+        <input type="text" name="uf_destinatario" id="uf_dest" placeholder="UF do Destinatário">
+
+        <label class="label">CEP:</label>
+        <input type="text" name="cep_destinatario" id="cep_dest" placeholder="CEP do Destinatário">
+
+        <label class="label">CPF/CNPJ/DOC. ESTRANGEIRO:</label>
+        <input type="text" name="cpf_cnpj_destinatario" id="doc_dest"
+            placeholder="CPF/CNPJ/DOC. ESTRANGEIRO do Destinatário">
+    </div>
+
+    <div class="form-section">
+        <h2>Identificação dos Bens</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>CONTEÚDO</th>
+                    <th>QUANTIDADE</th>
+                    <th>VALOR</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas para preenchimento -->
+                <tr>
+                    <td><input type="text" id="conteudo_1" placeholder="Conteúdo 1"></td>
+                    <td><input type="number" id="quantidade_1" placeholder="Quantidade 1"></td>
+                    <td><input type="number" id="valor_1" placeholder="Valor 1" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="conteudo_2" placeholder="Conteúdo 2"></td>
+                    <td><input type="number" id="quantidade_2" placeholder="Quantidade 2"></td>
+                    <td><input type="number" id="valor_2" placeholder="Valor 2" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="conteudo_3" placeholder="Conteúdo 3"></td>
+                    <td><input type="number" id="quantidade_3" placeholder="Quantidade 3"></td>
+                    <td><input type="number" id="valor_3" placeholder="Valor 3" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="conteudo_4" placeholder="Conteúdo 4"></td>
+                    <td><input type="number" id="quantidade_4" placeholder="Quantidade 4"></td>
+                    <td><input type="number" id="valor_4" placeholder="Valor 4" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="conteudo_5" placeholder="Conteúdo 5"></td>
+                    <td><input type="number" id="quantidade_5" placeholder="Quantidade 5"></td>
+                    <td><input type="number" id="valor_5" placeholder="Valor 5" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="conteudo_6" placeholder="Conteúdo 6"></td>
+                    <td><input type="number" id="quantidade_6" placeholder="Quantidade 6"></td>
+                    <td><input type="number" id="valor_6" placeholder="Valor 6" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="conteudo_7" placeholder="Conteúdo 7"></td>
+                    <td><input type="number" id="quantidade_7" placeholder="Quantidade 7"></td>
+                    <td><input type="number" id="valor_7" placeholder="Valor 7" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="conteudo_8" placeholder="Conteúdo 8"></td>
+                    <td><input type="number" id="quantidade_8" placeholder="Quantidade 8"></td>
+                    <td><input type="number" id="valor_8" placeholder="Valor 8" step="0.01"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit" onclick="get_Values()">Gerar</button>
+    </div>
+
+
+
+</body>
+
+</html>

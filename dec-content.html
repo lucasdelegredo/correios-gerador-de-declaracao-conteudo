@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaração de Conteúdo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.2;
+            font-size: 10px;
+            /* Tamanho da fonte menor */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 12px;
+            /* Tamanho do cabeçalho */
+        }
+
+        .section {
+            margin-bottom: 10px;
+            border: 1px solid black;
+            /* Borda em volta de cada div */
+            padding: 10px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .table,
+        .table th,
+        .table td {
+            border: 1px solid black;
+        }
+
+        .table th,
+        .table td {
+            padding: 5px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #d3d3d3;
+            /* Tom cinza para os cabeçalhos da tabela */
+        }
+
+        .signature {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>DECLARAÇÃO DE CONTEÚDO</h1>
+
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Declaração de Conteúdo</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                line-height: 1.2;
+                font-size: 10px;
+                /* Tamanho da fonte menor */
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 12px;
+                /* Tamanho do cabeçalho */
+            }
+
+            .container {
+                display: flex;
+                /* Flexbox para lado a lado */
+                justify-content: space-between;
+            }
+
+            .section {
+                margin-bottom: 10px;
+                border: 1px solid black;
+                /* Borda em volta de cada div */
+                padding: 10px;
+                width: 48%;
+                /* Cada div ocupa metade da largura */
+            }
+
+            .label {
+                font-weight: bold;
+            }
+
+            .table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
+            }
+
+            .table,
+            .table th,
+            .table td {
+                border: 1px solid black;
+            }
+
+            .table th,
+            .table td {
+                padding: 5px;
+                text-align: left;
+            }
+
+            .table th {
+                background-color: #d3d3d3;
+                /* Tom cinza para os cabeçalhos da tabela */
+            }
+
+            .signature {
+                margin-top: 30px;
+            }
+
+            .full-width-section {
+                width: 98%;
+                /* Seção que ocupa 100% da largura */
+                margin-top: 10px;
+                border: 1px solid black;
+                /* Borda em volta da seção */
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script src="script.js">
+
+            // Chama a função tableInsert quando a página é carregada
+            document.addEventListener('DOMContentLoaded', (event) => {
+                tableInsert();
+            });
+
+        </script>
+        <h1>DECLARAÇÃO DE CONTEÚDO</h1>
+
+        <div class="container">
+            <div class="section">
+                <h2>REMETENTE</h2>
+                <div>
+                    <span class="label">NOME:</span> <span>NOME DO REMETENTE</span>
+                </div>
+                <div>
+                    <span class="label">ENDEREÇO:</span> <span>ENDEREÇO DO REMETENTE</span>
+                </div>
+                <div>
+                    <span class="label">CIDADE:</span> <span>CIDADE DO REMETENTE</span>
+                </div>
+                <div>
+                    <span class="label">UF:</span> <span>UF DO REMETENTE</span>
+                </div>
+                <div>
+                    <span class="label">CEP:</span> <span>CEP DO REMETENTE</span>
+                </div>
+                <div>
+                    <span class="label">CPF/CNPJ/DOC. ESTRANGEIRO:</span> <span>CPF/CNPJ DO REMETENTE</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>DESTINATÁRIO</h2>
+                <div>
+                    <span class="label">NOME:</span> <span>NOME DO DESTINATÁRIO</span>
+                </div>
+                <div>
+                    <span class="label">ENDEREÇO:</span> <span>ENDEREÇO DO DESTINATÁRIO</span>
+                </div>
+                <div>
+                    <span class="label">CIDADE:</span> <span>CIDADE DO DESTINATÁRIO</span>
+                </div>
+                <div>
+                    <span class="label">UF:</span> <span>UF DO DESTINATÁRIO</span>
+                </div>
+                <div>
+                    <span class="label">CEP:</span> <span>CEP DO DESTINATÁRIO</span>
+                </div>
+                <div>
+                    <span class="label">CPF/CNPJ/DOC. ESTRANGEIRO:</span> <span>CPF/CNPJ DO DESTINATÁRIO</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-width-section">
+            <h2>IDENTIFICAÇÃO DOS BENS</h2>
+            <table class="table" id="tabela">
+                <thead>
+                    <tr>
+                        <th>ITEM</th>
+                        <th>CONTEÚDO</th>
+                        <th>QUANT.</th>
+                        <th>VALOR</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="full-width-section">
+            <h2 style="text-align: center;">DECLARAÇÃO</h2>
+            <p>Declaro que não me enquadro no conceito de contribuinte previsto no art. 4º da Lei Complementar nº
+                87/1996,
+                uma vez que não realizo, com habitualidade ou em volume que caracterize intuito comercial, operações de
+                circulação de mercadoria, ainda que se iniciem no exterior, ou estou dispensado da emissão da nota
+                fiscal
+                por força da legislação tributária vigente, responsabilizando-me, nos termos da lei e a quem de direito,
+                por
+                informações inverídicas.</p>
+            <p>Declaro ainda que não estou postando conteúdo inflamável, explosivo, causador de combustão espontânea,
+                tóxico, corrosivo, gás ou qualquer outro conteúdo que conste na lista de proibições e restrições
+                disponível
+                no site dos Correios: <a
+                    href="https://www.correios.com.br/enviar/proibicoes-e-restricoes/proibicoes-e-restricoes"
+                    target="_blank">Correios - Proibições e Restrições</a>.</p>
+
+            <div class="signature">
+                <p>____ de _____________________ de _____________</p>
+            </div>
+            <div class="signature">
+                <p>______________________________</p>
+                <p>Assinatura do Declarante/Remetente</p>
+            </div>
+        </div>
+
+
+
+        <div class="full-width-section">
+            <h3>OBSERVAÇÃO:</h3>
+            <p>Constitui crime contra a ordem tributária suprimir ou reduzir tributo, ou contribuição social e qualquer
+                acessório (Lei 8.137/90 Art. 1º, V).
+            </p>
+        </div>
+    </body>
+
+    </html>
